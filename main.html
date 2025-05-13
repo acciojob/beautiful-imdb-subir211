@@ -5,28 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IMDb Page Styling</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        .moviePic {
-            height: 200px;
-            width: 100px;
-            opacity: 0.5;
-        }
-        .movieDetail {
-            position: absolute;
-            top: 30px;
-            width: auto; /* Adjust width */
-            text-align: left; /* Change as needed */
-            font-size: 22px;
-        }
+	<style>
+.moviePic img {
+    height: auto; /* Adjust as necessary */
+    width: 100%; /* You might want to set this to a specific size */
+    opacity: 0.8; /* Adjust opacity as needed */
+}
+
+.movieDetail {
+    position: relative; /* Change to absolute if you want it to overlay */
+    top: 20%; /* Adjust this value to center it vertically */
+    width: 80%; /* Adjust width as necessary */
+    text-align: center; /* Center the text */
+    font-size: 22px; /* Adjust font size as necessary */
+    margin: 0 auto; /* Center the element */
+}
     </style>
 </head>
 <body>
     <div class="moviePic">
-        <img src="https://upload.wikimedia.org/wikipedia/en/d/df/3_idiots_poster.jpg"> <!-- Replace with your image data -->
-    </div>
-    <div class="movieDetail">
-        <p>"3 Idiots" is a 2009 Indian Hindi-language comedy-drama film directed by Rajkumar Hirani, starring Aamir Khan, R. Madhavan, and Sharman Joshi.</p>
-    </div>
-    <script src="./script.js"></script>
+    <img src="https://upload.wikimedia.org/wikipedia/en/d/df/3_idiots_poster.jpg" alt="3 Idiots Movie Poster">
+</div>
+<p class="movieDetail">"3 Idiots" is a 2009 Indian Hindi-language comedy-drama film directed by Rajkumar Hirani, starring Aamir Khan, R. Madhavan, and Sharman Joshi.</p>
 </body>
 </html>
