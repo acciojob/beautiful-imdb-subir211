@@ -1,16 +1,32 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Details</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .moviePic {
+            height: 200px;
+            width: 100px;
+            opacity: 0.5;
+        }
+        .movieDetail {
+            position: absolute;
+            top: 30px;
+            width: auto; /* Adjust width */
+            text-align: left; /* Change as needed */
+            font-size: 22px;
+        }
+    </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
+    <div class="moviePic">
+        <img src="https://upload.wikimedia.org/wikipedia/en/d/df/3_idiots_poster.jpg"> <!-- Replace with your image data -->
+    </div>
+    <div class="movieDetail">
+        <p>"3 Idiots" is a 2009 Indian Hindi-language comedy-drama film directed by Rajkumar Hirani, starring Aamir Khan, R. Madhavan, and Sharman Joshi.</p>
+    </div>
+    <script src="./script.js"></script>
 </body>
-
 </html>
